@@ -11,6 +11,8 @@ namespace MyNameSpace
         // static void Main(string[] args){} <- error  (main * 2)
 
         public static int addOne(int x) => x + 1;
+
+        public int i = 10086;
     }
 }
 
