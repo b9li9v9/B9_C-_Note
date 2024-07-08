@@ -17,3 +17,7 @@ https://learn.microsoft.com/zh-cn/sql/ssms/download-sql-server-management-studio
 dotnet new ...
 dotnet run 
 ```
+```
+visual studio
+Cascadia Mono 10
+```
