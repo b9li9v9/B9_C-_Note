@@ -1,11 +1,14 @@
+# ubuntu
+
 ```
 https://learn.microsoft.com/zh-cn/dotnet/core/install/linux?WT.mc_id=dotnet-35129-website
 
 ubuntu 24.04 .NET 8.0
 sudo apt-get update &&   sudo apt-get install -y dotnet-sdk-8.0
 ```
+
+# microsoft dotnet overview
 ```
-overview
 https://learn.microsoft.com/zh-cn/dotnet/csharp/tour-of-csharp/
 https://learn.microsoft.com/zh-cn/previous-versions/visualstudio/visual-studio-2012/ms173110(v=vs.110)
 
@@ -13,34 +16,18 @@ sqlserver & ssms
 https://www.microsoft.com/zh-cn/sql-server/sql-server-downloads
 https://learn.microsoft.com/zh-cn/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
 ```
+
+# dotnet cli
 ```
 dotnet new ...
 dotnet run 
 ```
-```
-visual studio
-Cascadia Mono 10
-```
-```
-mongodb
 
+# mongodb
+```
 基本配置
 1. 下载mongodb mongodbshell mongodbGUI / NuGet Install-package MongoDB.Driver
 2. 启动db  mongod.exe --dbpath "path"
-
-google AI
-https://aistudio.google.com/app/prompts/new_chat
-
-依赖注入-服务定位器
-1.NuGet Install-package Microsoft.Extensions.DependencyInjection
-2.using Microsoft.Extensions.DependencyInjection
-3.容器注册 ServiceCollection services = new ServiceCollection()  
-	services.AddTransient<class>() 瞬态
-	services.AddSingleton<class>() 单例
-	services.AddScoped<class>() 范围
-4.构建  services.BuildServiceProvider()
-
-rabbitmq
 
 原生CLI
 创建库 use "dbname"
@@ -115,5 +102,25 @@ var filter = Builders<Person>.Filter.Eq(x => x.Name, "John Doe");
 var update = Builders<Person>.Update.Set(x => x.Age, 35);
 // 执行更新操作
 await collection.UpdateOneAsync(filter, update); 
-
 ```
+
+# google AI
+```
+https://aistudio.google.com/app/prompts/new_chat
+```
+
+# 依赖注入-服务定位器
+```
+1.NuGet Install-package Microsoft.Extensions.DependencyInjection
+2.using Microsoft.Extensions.DependencyInjection
+3.容器注册 ServiceCollection services = new ServiceCollection()  
+	services.AddTransient<class>() 瞬态
+	services.AddSingleton<class>() 单例
+	services.AddScoped<class>() 范围
+4.构建  services.BuildServiceProvider()
+```
+
+
+
+
+
